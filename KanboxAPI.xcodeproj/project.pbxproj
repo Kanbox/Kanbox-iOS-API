@@ -24,7 +24,6 @@
 		E92B130F1337217F00ED0406 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E92B130D1337217F00ED0406 /* InfoPlist.strings */; };
 		E92B13121337217F00ED0406 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B13111337217F00ED0406 /* main.m */; };
 		E92B13151337217F00ED0406 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B13141337217F00ED0406 /* AppDelegate.m */; };
-		E92B1345133721A600ED0406 /* KBXKanboxClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B1344133721A600ED0406 /* KBXKanboxClient.m */; };
 		E97696851469015500703E5A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E97696841469015500703E5A /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E97696881469016B00703E5A /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = E97696871469016B00703E5A /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E976968A146901C000703E5A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9769689146901C000703E5A /* CFNetwork.framework */; };
@@ -35,6 +34,7 @@
 		E9ACCDD3135558C200E1D1B8 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ACCDD2135558C200E1D1B8 /* TestView.m */; };
 		E9ACCDD613558CB100E1D1B8 /* KBXAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ACCDD513558CB100E1D1B8 /* KBXAuthViewController.m */; };
 		E9ACCDF91356CBEE00E1D1B8 /* NSURL+QueryStringParams.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ACCDF81356CBED00E1D1B8 /* NSURL+QueryStringParams.m */; };
+		E9EE07E315C7900F0025BF61 /* KBXKanboxClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EE07E215C7900F0025BF61 /* KBXKanboxClient.m */; };
 		E9F6A226135C2AB00043507A /* NSDictionary+EncodeURLParams.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F6A225135C2AB00043507A /* NSDictionary+EncodeURLParams.m */; };
 /* End PBXBuildFile section */
 
@@ -70,8 +70,6 @@
 		E92B13101337217F00ED0406 /* KanboxAPI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KanboxAPI-Prefix.pch"; sourceTree = "<group>"; };
 		E92B13111337217F00ED0406 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E92B13141337217F00ED0406 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E92B1343133721A600ED0406 /* KBXKanboxClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBXKanboxClient.h; sourceTree = "<group>"; };
-		E92B1344133721A600ED0406 /* KBXKanboxClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBXKanboxClient.m; sourceTree = "<group>"; };
 		E97696831469015500703E5A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		E97696841469015500703E5A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		E97696861469016B00703E5A /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = ASIHTTPRequest/ASIAuthenticationDialog.h; sourceTree = "<group>"; };
@@ -91,9 +89,10 @@
 		E9ACCDD413558CB100E1D1B8 /* KBXAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBXAuthViewController.h; path = API/KBXAuthViewController.h; sourceTree = "<group>"; };
 		E9ACCDD513558CB100E1D1B8 /* KBXAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBXAuthViewController.m; path = API/KBXAuthViewController.m; sourceTree = "<group>"; };
 		E9ACCDD713558DF300E1D1B8 /* KanboxAPICredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanboxAPICredentials.h; sourceTree = "<group>"; };
-		E9ACCDF61355AC1800E1D1B8 /* KBXAuthorizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBXAuthorizerDelegate.h; path = API/KBXAuthorizerDelegate.h; sourceTree = "<group>"; };
 		E9ACCDF71356CBED00E1D1B8 /* NSURL+QueryStringParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+QueryStringParams.h"; path = "API/NSURL+QueryStringParams.h"; sourceTree = "<group>"; };
 		E9ACCDF81356CBED00E1D1B8 /* NSURL+QueryStringParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+QueryStringParams.m"; path = "API/NSURL+QueryStringParams.m"; sourceTree = "<group>"; };
+		E9EE07E115C7900F0025BF61 /* KBXKanboxClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KBXKanboxClient.h; path = API/KBXKanboxClient.h; sourceTree = "<group>"; };
+		E9EE07E215C7900F0025BF61 /* KBXKanboxClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KBXKanboxClient.m; path = API/KBXKanboxClient.m; sourceTree = "<group>"; };
 		E9F6A224135C2AB00043507A /* NSDictionary+EncodeURLParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+EncodeURLParams.h"; path = "API/NSDictionary+EncodeURLParams.h"; sourceTree = "<group>"; };
 		E9F6A225135C2AB00043507A /* NSDictionary+EncodeURLParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+EncodeURLParams.m"; path = "API/NSDictionary+EncodeURLParams.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,14 +198,13 @@
 		E92B13421337218900ED0406 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				E9EE07E115C7900F0025BF61 /* KBXKanboxClient.h */,
+				E9EE07E215C7900F0025BF61 /* KBXKanboxClient.m */,
 				E97696981469085A00703E5A /* KBXTypes.h */,
-				E92B1343133721A600ED0406 /* KBXKanboxClient.h */,
-				E92B1344133721A600ED0406 /* KBXKanboxClient.m */,
 				E9ACCDC113544DA800E1D1B8 /* KBXAccessToken.h */,
 				E9ACCDC213544DA800E1D1B8 /* KBXAccessToken.m */,
 				E9ACCDC51354510700E1D1B8 /* KBXClientCredentials.h */,
 				E917EB251467879700D87E74 /* KBXClientCredentials.m */,
-				E9ACCDF61355AC1800E1D1B8 /* KBXAuthorizerDelegate.h */,
 				E9ACCDC81354544800E1D1B8 /* KBXAuthorizer.h */,
 				E917EB27146787B300D87E74 /* KBXAuthorizer.m */,
 				E9ACCDD413558CB100E1D1B8 /* KBXAuthViewController.h */,
@@ -325,7 +323,6 @@
 			files = (
 				E92B13121337217F00ED0406 /* main.m in Sources */,
 				E92B13151337217F00ED0406 /* AppDelegate.m in Sources */,
-				E92B1345133721A600ED0406 /* KBXKanboxClient.m in Sources */,
 				E9ACCDC313544DA800E1D1B8 /* KBXAccessToken.m in Sources */,
 				E9ACCDD3135558C200E1D1B8 /* TestView.m in Sources */,
 				E9ACCDD613558CB100E1D1B8 /* KBXAuthViewController.m in Sources */,
@@ -342,6 +339,7 @@
 				E917EB4214678AA600D87E74 /* JSONKit.m in Sources */,
 				E97696851469015500703E5A /* Reachability.m in Sources */,
 				E97696881469016B00703E5A /* ASIAuthenticationDialog.m in Sources */,
+				E9EE07E315C7900F0025BF61 /* KBXKanboxClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

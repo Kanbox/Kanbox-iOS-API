@@ -10,9 +10,7 @@
 //  http://www.apache.org/licenses/LICENSE-2.0
 //
 
-#import "KBXAuthorizerDelegate.h"
-
-@interface TestView : UIViewController <KBXAuthorizerDelegate, UIActionSheetDelegate> {
+@interface TestView : UIViewController <UIActionSheetDelegate> {
 	UILabel *infoLabel;
 	UIButton *loginButton;
 	UIBarButtonItem *logoutButton;

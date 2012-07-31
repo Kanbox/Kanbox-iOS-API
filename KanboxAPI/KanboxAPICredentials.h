@@ -11,5 +11,5 @@
 //
 
 #error Provide your Client ID and Client Secret
-#define kKanboxClientID @"<your client id>"//@"8aea12921c8b830c63540844d294015a"
+#define kKanboxClientID @"<your client id>"
 #define kKanboxClientSecret @"<your client secret>"

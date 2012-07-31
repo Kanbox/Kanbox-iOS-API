@@ -12,13 +12,6 @@
 
 #import "KBXClientCredentials.h"
 
-@interface KBXClientCredentials ()
-
-//@property (nonatomic, copy, readwrite) NSString *clientID;
-//@property (nonatomic, copy) NSString *clientSecret;
-
-@end
-
 @implementation KBXClientCredentials
 
 @synthesize clientID, clientSecret;
